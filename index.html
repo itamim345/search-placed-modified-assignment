@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Places</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header-area -->
+        <header>
+            <div class="searchbox">
+                <input type="text" id="search-input" placeholder="search places...">
+            </div>
+            <div>
+                <input type="number" id="search-limit-input">
+            </div>
+        </header>
+        <!-- spinner -->
+        <div id="spinner">
+            <img src="./loader.gif" alt="loader">
+        </div>
+        <!-- Our Table -->
+        <table id="table_wrap" class="table_container">
+            <thead class="thead">
+                <tr class="table_row">
+                    <td class="th_data">#</td>
+                    <td class="th_data">Place</td>
+                    <td class="th_data">Country</td>
+                    <td class="th_data">Flag</td>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+    </div>
+    <!-- JS link  -->
+    <script src="app.js"></script>
+</body>
+</html>
